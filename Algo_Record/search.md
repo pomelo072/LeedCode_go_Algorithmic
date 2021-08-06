@@ -9,7 +9,7 @@
 - [二分查找](https://leetcode-cn.com/problems/binary-search/) `easy`
 - [第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/) `easy`
 - [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) `easy`
-
+- [两数之和--输入有序数组](./array.md#两数求和_输入有序数组)
 
 #### 解题思路
 
