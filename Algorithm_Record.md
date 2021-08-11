@@ -10,8 +10,9 @@
 - [数学](./Algo_Record/math.md)
 - [数组 / 链表](./Algo_Record/array.md)
 - [字符串](./Algo_Record/string.md)
-- [查找算法](./Algo_Record/search.md)
+- [查找算法](./Algo_Record/seek.md)
 - [技巧](./Algo_Record/skill.md)
+- [搜索](./Algo_Record/search.md)
 
 ---
 

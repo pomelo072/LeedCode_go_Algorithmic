@@ -1,34 +1,51 @@
-# 查找算法
+# 搜索
 
 ---
-- [二分查找](#二分查找)
+
+- [图像渲染](#图像渲染)
+- [岛屿的最大面积](#岛屿的最大面积)
+
 ---
 
-## 二分查找
+## 图像渲染
 
-- [二分查找](https://leetcode-cn.com/problems/binary-search/) `easy`
-- [第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/) `easy`
-- [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) `easy`
-- [两数之和--输入有序数组](./array.md#两数求和_输入有序数组)
+`easy` `广度优先搜索` `深度优先搜索`
 
-#### 解题思路
+- [图像渲染](https://leetcode-cn.com/problems/flood-fill/)
 
-基础思想为二分查找, 时间复杂度 O(log n)
+### 解题思路
 
-通过对目标和中心元素比较, 判断目标元素位置
-- 相等, 则中心元素为目标元素
-- 小于, 则目标元素在此中心元素左侧
-- 大于, 则目标元素在此中心元素右侧
+1. 广度优先搜索
 
-循环对中心元素判断减小区间范围, 直至等于某个中心元素或区间内只剩一个元素.
+- 将路径上的点与初始点颜色比较,一样的就改变颜色并加入队列
+- 依次对队列上的点进行操作, 直到完成队列上所有的点
 
-#### 解题代码
+2. 深度优先搜索
 
-- [二分查找](../Binary_Search/code.go)
-- [第一个错误的版本](../First_Bad_Version/code.go)
-- [搜索插入位置](../Search_Insert_Position/code.go)
+- 将路径上的点与初始点颜色比较, 一样的就改变颜色并进入递归
+- 直到所有递归结束, 修改完成
 
-#### Tips
+### 解题代码
 
-- 注意判断边界位置
-- 在区间变换时注意不同语言的开合条件
+- [Code](../Flood_Fill/code.go)
+
+### Tips
+
+- 两种搜索, 广度是以路径范围优先, 深度是以路径深度优先.
+
+## 岛屿的最大面积
+
+`medium` `广度优先搜索` `深度优先搜索`
+
+- [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
+
+### 解题思路
+
+
+
+### 解题代码
+
+- [Code](../Max_Area_of_Island/code.go)
+
+### Tips
+
